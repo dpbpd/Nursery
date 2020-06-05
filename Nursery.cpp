@@ -93,6 +93,9 @@ void setup() {
 void loop() {
     houseMain();
     nursery();
+    displayData();
+}
+void displayData(){
     for(int i; i< numOfSS; i++){
         lcd.setCursor(0,3);
         lcd.print(i +1);
@@ -104,7 +107,6 @@ void loop() {
         delay(2500);
     }
 }
-
 void houseMain(){
     int houseTemp;
     unsigned long now = millis();
